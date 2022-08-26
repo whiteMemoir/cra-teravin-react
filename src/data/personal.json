@@ -1,0 +1,7 @@
+[
+	{ "attr": "namaDepan", "type": "text", "label": "Nama Depan" },
+	{ "attr": "namaBelakang", "type": "text", "label": "Nama Belakang" },
+	{ "attr": "email", "type": "email", "label": "Email" },
+	{ "attr": "telepon", "type": "text", "label": "Nomor Telepon" },
+	{ "attr": "alamat", "type": "text", "label": "Alamat" }
+]

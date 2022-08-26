@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-family: "Poppins", sans-serif;
+	background-color: rgb(245, 244, 239) !important;
+}
+html,
+body {
+	height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-add {
+	background-color: #2970da;
+	color: white !important;
+	text-decoration: none;
+	box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.detail-container {
+	margin: 0 auto;
+	width: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media only screen and (max-width: 500px) {
+	/* For mobile: */
 
-.App-link {
-  color: #61dafb;
+	.container {
+		margin: 0 auto;
+		padding: 0;
+	}
 }
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	.container {
+		margin: 0 auto;
+		padding: 6rem 0;
+	}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
 }
